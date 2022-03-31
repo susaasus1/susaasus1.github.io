@@ -1,68 +1,97 @@
-@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow);
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
+    box-sizing:border-box;
 }
-body{background: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/type.png') repeat;
-    font-family: 'Archivo Narrow', sans-serif;
-    text-transform: uppercase;
-    font-size:0.8em;
+
+   .marg{
+       width: 400px;
+       height: 450px;
+       margin:100px auto 0px;
+       font-family: Arial;
+       font-size: 40px;
+       font-weight: bold;
+
+   }
+p{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
 }
-nav {
+.marg>p span{
+    color: red;
+}
+
+.main{
+       width: 400px;
+       height: 400px;
+       background-color: #bbada0;
+       border-radius: 15px;
+   }
+
+
+   .cell{
+       width: 80px;
+       height: 80px;
+       margin:16px 0px 0px 16px;
+       border-radius: 5px;
+       background-color: #ccc0b3;
+       float: left;
+       text-align: center;
+       line-height: 80px;
+   }
+
+
+   .gameover{
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color: rgba(55,55,55,0.3);
+       display: none;
+   }
+.over{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
     text-align: center;
-    margin: 20px 0;
+    font-size: 30px;
+    margin-left: -150px;
+    margin-top: -120px;
 }
-nav ul ul {
-    display: none;
-}
-nav ul li:hover > ul {
-    display: block;
-}
-nav ul {
-    background: #d4c8e8;
-    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-    padding: 0 20px;
-    border-radius: 7px;
-    list-style: none;
-    position: relative;
-    display: inline-table;
-}
-nav ul:after {
-    content: ""; clear: both; display: block;
-}
-nav ul li {
-    float: left;
-}
-nav ul li:hover {
-    background: #4b545f;
-    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
-}
-nav ul li:hover a {
+.over a{
+    display: inline-block;
+    text-decoration:none;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
     color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #9F8D77;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
-nav ul li a {
-    display: block; padding: 15px 30px;
-    color: #000000; text-decoration: none;
-}
-nav ul ul {
-    background: #5f6975; border-radius: 0px; padding: 0;
-    position: absolute; top: 100%;
-}
-nav ul ul li {
-    float: none;
-    border-top: 1px solid #6b727c;
-    border-bottom: 1px solid #575f6a;
-    position: relative;
-}
-nav ul ul li a {
-    padding: 15px 30px;
-    color: #fff;
-}
-nav ul ul li a:hover {
-    background: #4b545f;
-}
-nav ul ul ul {
-    position: absolute; left: 100%; top:0;
-}
+
+
+.n2{background-color:#eee3da;color:#776e65}
+.n4{background-color:#ede0c8;color:#776e65}
+.n8{background-color:#f2b179}
+.n16{background-color:#f59563}
+.n32{background-color:#f67c5f}
+.n64{background-color:#f65e3b}
+.n128{background-color:#edcf72}
+.n256{background-color:#edcc61}
+.n512{background-color:#9c0}
+.n1024{background-color:#33b5e5;font-size:30px;color:#FFF;}
+.n2048{background-color:#09c;font-size:30px;color:#FFF;}
+.n4096{background-color:#a6c;font-size:30px;color:#FFF;}
+.n8192{background-color:#93c;font-size:30px;color:#FFF;}
